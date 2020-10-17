@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/SAMSUNG/Desktop/C/grammarDealing/main.cpp
+iostream
+-
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+algorithm
+-
+unordered_map
+-
+vector
+-
+set
+-
+
