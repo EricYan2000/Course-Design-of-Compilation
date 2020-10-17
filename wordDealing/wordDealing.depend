@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1600743442 source:c:\users\administrator\desktop\worddealing\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+
+1600868987 source:c:\users\samsung\desktop\c\worddealing\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<algorithm>
+	<unordered_map>
+
