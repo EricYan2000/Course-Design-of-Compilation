@@ -1,0 +1,3 @@
+C:/Users/SAMSUNG/Desktop/C/errorDealing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/SAMSUNG/Desktop/C/errorDealing/cmake-build-debug/CMakeFiles/errorDealing.dir
+C:/Users/SAMSUNG/Desktop/C/errorDealing/cmake-build-debug/CMakeFiles/edit_cache.dir
