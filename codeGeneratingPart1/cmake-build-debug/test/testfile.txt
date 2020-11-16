@@ -1,0 +1,18 @@
+void main() {
+     char c;
+     int a, b;
+     printf("18373336");
+     scanf(a);
+     scanf(c);
+     scanf(b);
+     printf(a + b);
+     printf(a - b);
+     printf(a * b);
+     printf(a / b);
+     c = ((-a-b) * (1-2) + 3 + a / 2);
+     printf(c);
+     printf('c'+1);
+     printf(('c'));
+     printf("error!");
+     printf("file3 over!");
+}

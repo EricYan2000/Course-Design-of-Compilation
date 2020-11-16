@@ -1,0 +1,188 @@
+VOIDTK void
+MAINTK main
+LPARENT (
+RPARENT )
+LBRACE {
+CONSTTK const
+INTTK int
+IDENFR E
+ASSIGN =
+INTCON 10
+<无符号整数>
+<整数>
+<常量定义>
+SEMICN ;
+CONSTTK const
+CHARTK char
+IDENFR H
+ASSIGN =
+CHARCON a
+<常量定义>
+SEMICN ;
+<常量说明>
+INTTK int
+IDENFR A
+COMMA ,
+IDENFR C
+COMMA ,
+IDENFR D
+COMMA ,
+IDENFR G
+<变量定义无初始化>
+<变量定义>
+SEMICN ;
+INTTK int
+IDENFR F
+ASSIGN =
+MINU -
+INTCON 5
+<无符号整数>
+<整数>
+<常量>
+<变量定义及初始化>
+<变量定义>
+SEMICN ;
+CHARTK char
+IDENFR B
+<变量定义无初始化>
+<变量定义>
+SEMICN ;
+CHARTK char
+IDENFR charCon
+ASSIGN =
+CHARCON p
+<常量>
+<变量定义及初始化>
+<变量定义>
+SEMICN ;
+<变量说明>
+SCANFTK scanf
+LPARENT (
+IDENFR B
+RPARENT )
+<读语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+STRCON Bob
+<字符串>
+COMMA ,
+IDENFR B
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+IDENFR G
+ASSIGN =
+LPARENT (
+IDENFR A
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+PLUS +
+IDENFR B
+<因子>
+MULT *
+LPARENT (
+MINU -
+IDENFR E
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+MULT *
+LPARENT (
+IDENFR C
+<因子>
+<项>
+PLUS +
+IDENFR D
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+PLUS +
+IDENFR F
+<因子>
+<项>
+PLUS +
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+MULT *
+LPARENT (
+CHARCON c
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+<表达式>
+<赋值语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+STRCON Eric
+<字符串>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR B
+<因子>
+DIV /
+LPARENT (
+IDENFR C
+<因子>
+<项>
+MINU -
+IDENFR D
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+PLUS +
+IDENFR H
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR G
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+RETURNTK return
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<主函数>
+<程序>

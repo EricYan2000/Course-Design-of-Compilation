@@ -1,0 +1,218 @@
+VOIDTK void
+MAINTK main
+LPARENT (
+RPARENT )
+LBRACE {
+CHARTK char
+IDENFR c
+<变量定义无初始化>
+<变量定义>
+SEMICN ;
+INTTK int
+IDENFR a
+COMMA ,
+IDENFR b
+<变量定义无初始化>
+<变量定义>
+SEMICN ;
+<变量说明>
+PRINTFTK printf
+LPARENT (
+STRCON 18373336
+<字符串>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+SCANFTK scanf
+LPARENT (
+IDENFR a
+RPARENT )
+<读语句>
+SEMICN ;
+<语句>
+SCANFTK scanf
+LPARENT (
+IDENFR c
+RPARENT )
+<读语句>
+SEMICN ;
+<语句>
+SCANFTK scanf
+LPARENT (
+IDENFR b
+RPARENT )
+<读语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR a
+<因子>
+<项>
+PLUS +
+IDENFR b
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR a
+<因子>
+<项>
+MINU -
+IDENFR b
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR a
+<因子>
+MULT *
+IDENFR b
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR a
+<因子>
+DIV /
+IDENFR b
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+IDENFR c
+ASSIGN =
+LPARENT (
+LPARENT (
+MINU -
+IDENFR a
+<因子>
+<项>
+MINU -
+IDENFR b
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+MULT *
+LPARENT (
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+<项>
+MINU -
+INTCON 2
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+PLUS +
+INTCON 3
+<无符号整数>
+<整数>
+<因子>
+<项>
+PLUS +
+IDENFR a
+<因子>
+DIV /
+INTCON 2
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+<表达式>
+<赋值语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+IDENFR c
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+CHARCON c
+<因子>
+<项>
+PLUS +
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+LPARENT (
+CHARCON c
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+STRCON error!
+<字符串>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+PRINTFTK printf
+LPARENT (
+STRCON file3 over!
+<字符串>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<主函数>
+<程序>

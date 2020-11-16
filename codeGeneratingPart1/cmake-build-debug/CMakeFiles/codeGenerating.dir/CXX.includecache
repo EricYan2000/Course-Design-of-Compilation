@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/config.h
+
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/memMap.h
+unordered_map
+-
+quadruple.h
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/quadruple.h
+config.h
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/config.h
+
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/quadruple.cpp
+quadruple.h
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/quadruple.h
+config.h
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/config.h
+memMap.h
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/memMap.h
+stdlib.h
+-
+
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/quadruple.h
+iostream
+-
+type.h
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/type.h
+unordered_map
+-
+
+C:/Users/SAMSUNG/Desktop/C/codeGenerating/type.h
+

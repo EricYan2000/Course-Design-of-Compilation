@@ -1,0 +1,104 @@
+.data
+	enter: .asciiz "\n"
+	msg1: .asciiz "18182653"
+	msg2: .asciiz "the bigger is m"
+	msg3: .asciiz "m is "
+	msg4: .asciiz "check"
+	msg5: .asciiz "right"
+	msg6: .asciiz "middle"
+	msg7: .asciiz "1181007016"
+	msg8: .asciiz " "
+	msg9: .asciiz "end"
+
+.text
+	li $8, 12
+	sw $8, 268697596
+	li $8, 3
+	sw $8, 268697588
+	li $8, 5
+	sw $8, 268697592
+	li $8, 2
+	sw $8, 268697580
+	lw $8, 268697592
+	lw $9, 268697580
+	sub $10, $8, $9
+	sw $10, 268697576
+	lw $8, 268697576
+	li $9, 3
+	add $10, $8, $9
+	sw $10, 268697572
+	lw $8, 268697596
+	lw $9, 268697572
+	sub $10, $8, $9
+	sw $10, 268697568
+	lw $8, 268697568
+	sw $8, 268697584
+	la $a0, msg1
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg2
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	li $8, 0
+	li $9, 0
+	add $10, $8, $9
+	sw $10, 268697564
+	lw $8, 268697564
+	sw $8, 268697588
+	la $a0, msg3
+	li $v0, 4
+	syscall
+	lw $4, 268697584
+	li $v0, 1
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg4
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg5
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg6
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg7
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg8
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	lw $4, 268697588
+	li $v0, 1
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	la $a0, msg9
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall

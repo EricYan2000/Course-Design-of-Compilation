@@ -1,0 +1,31 @@
+void main() {
+    const int E = 10;
+    const char H = 'a';
+    int A, C, D, G;
+    int F = -5;
+    char B = 'B';
+    char charCon = 'p';
+    printf(('a'));
+    printf('a');
+    printf(-'a');
+    scanf(B);
+    printf(B);
+    printf(-B);
+    printf((B));
+    printf("Bob", B);
+    printf("Bob", (B));
+    printf("Eric");
+    A = -E + 1;
+    printf(A);
+    C = 'c' * 1;
+    printf(C);
+    D = ((-1));
+    printf(D);
+    printf(H);
+    printf(B/(C-D) + H);
+    G = A + (-B) * (C + D) * F + ('c') + e * 1;
+    printf(G);
+    G = 'a' * 1;
+    printf(G);
+    return;
+}
