@@ -1,0 +1,293 @@
+.data
+	enter: .asciiz "\n"
+	msg1: .asciiz "18373528"
+	msg2: .asciiz "asd%c*+22"
+	msg3: .asciiz "%d"
+
+.text
+	li $8, '5'
+	sw $8, 268501040
+	li $8, 3
+	sw $8, 268501044
+	li $8, 3
+	sw $8, 268501048
+	li $8, 4
+	sw $8, 268501052
+	li $8, 4
+	sw $8, 268501056
+	li $8, 1
+	sw $8, 268501060
+	li $8, 2
+	sw $8, 268501064
+	li $8, 4
+	sw $8, 268501068
+	li $8, 5
+	sw $8, 268501072
+	li $8, 3
+	sw $8, 268501076
+	li $8, 4
+	sw $8, 268501080
+	li $8, 7
+	sw $8, 268501084
+	j main_Entrance
+
+h:
+	sw $ra, 4($sp)
+	li $8, 1
+	sw $8, 12($sp)
+	lw $4, 12($sp)
+	lw $ra, 4($sp)
+	lw $8, 0($sp)
+	addu $sp, $sp, $8
+	jr $ra
+	li $a0, 0xf0f0f0f0
+	lw $ra, 4($sp)
+	lw $8, 0($sp)
+	addu $sp, $sp, $8
+	jr $ra
+
+h_h:
+	sw $ra, 4($sp)
+	li $8, '1'
+	sw $8, 16($sp)
+	li $8, '2'
+	sw $8, 20($sp)
+	lw $4, 16($sp)
+	lw $ra, 4($sp)
+	lw $8, 0($sp)
+	addu $sp, $sp, $8
+	jr $ra
+	li $a0, 0xf0f0f0f0
+	lw $ra, 4($sp)
+	lw $8, 0($sp)
+	addu $sp, $sp, $8
+	jr $ra
+
+hhh:
+	sw $ra, 4($sp)
+	la $a0, msg1
+	li $v0, 4
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	li $a0, 0x0f0f0f0f
+	lw $ra, 4($sp)
+	lw $8, 0($sp)
+	addu $sp, $sp, $8
+	jr $ra
+	li $a0, 0xf0f0f0f0
+	lw $ra, 4($sp)
+	lw $8, 0($sp)
+	addu $sp, $sp, $8
+	jr $ra
+
+main_Entrance:
+	li $8, -432
+	sw $8, 268501088
+	li $8, 0
+	sll $8, $8, 2
+	li $9, 268501096
+	addu $8, $8, $9
+	li $10, 0
+	sw $10, 0($8)
+	li $8, 0
+	li $9, 1
+	mult $8, $9
+	mflo $8
+	li $9, 0
+	addu $8, $8, $9
+	sll $8, $8, 2
+	li $10, 1
+	li $9, 268501100
+	addu $8, $8, $9
+	sw $10, 0($8)
+	subu $sp, $sp, 24
+	li $9, 24
+	sw $9, 0($sp)
+	jal hhh
+	li $v0, 12
+	syscall
+	sw $2, 268501092
+	li $8, '+'
+	sw $8, 268501092
+	li $8, '*'
+	sw $8, 268501092
+	li $8, 4
+	sw $8, 268501088
+while_1:
+	lw $8, 268501088
+	li $9, 2
+	ble $8, $9, endWhile_1
+	la $a0, msg2
+	li $v0, 4
+	syscall
+	lw $4, 268501040
+	li $v0, 11
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	lw $8, 268501088
+	li $9, 1
+	subu $10, $8, $9
+	sw $10, 268501104
+	lw $8, 268501104
+	sw $8, 268501088
+	j while_1
+endWhile_1:
+	li $8, 0
+	sw $8, 268501088
+for_1:
+	lw $8, 268501088
+	li $9, 3
+	bgt $8, $9, endFor_1
+	lw $8, 268501088
+	li $9, 2
+	mult $8, $9
+	mflo $10
+	sw $10, 268501108
+	lw $8, 268501108
+	li $9, 1
+	addu $10, $8, $9
+	sw $10, 268501112
+	lw $4, 268501112
+	li $v0, 1
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	lw $8, 268501088
+	li $9, 1
+	addu $10, $8, $9
+	sw $10, 268501116
+	lw $8, 268501116
+	sw $8, 268501088
+	j for_1
+endFor_1:
+	li $8, 2
+	sw $8, 268501088
+for_2:
+	lw $8, 268501088
+	li $9, 0
+	blt $8, $9, endFor_2
+	lw $8, 268501088
+	li $9, 3
+	mult $8, $9
+	mflo $10
+	sw $10, 268501120
+	lw $8, 268501120
+	li $9, 1
+	subu $10, $8, $9
+	sw $10, 268501124
+	la $a0, msg3
+	li $v0, 4
+	syscall
+	lw $4, 268501124
+	li $v0, 1
+	syscall
+	la $a0, enter
+	li $v0, 4
+	syscall
+	lw $8, 268501088
+	li $9, 1
+	subu $10, $8, $9
+	sw $10, 268501128
+	lw $8, 268501128
+	sw $8, 268501088
+	j for_2
+endFor_2:
+	li $8, 0
+	li $9, 1
+	subu $10, $8, $9
+	sw $10, 268501132
+	lw $8, 268501088
+	lw $9, 268501132
+	beq $8, $9, ifEnd_1
+	lw $8, 268501088
+	li $9, 1
+	addu $10, $8, $9
+	sw $10, 268501136
+	lw $8, 268501136
+	sw $8, 268501088
+ifEnd_1:
+	lw $8, 268501088
+	li $9, 2
+	bne $8, $9, ifEnd_2
+	li $8, 'h'
+	sw $8, -8($sp)
+	subu $sp, $sp, 16
+	li $9, 16
+	sw $9, 0($sp)
+	jal h
+	sw $4, 268501140
+	lw $8, 268501140
+	sw $8, 268501088
+	li $8, 1
+	li $9, 1
+	addu $10, $8, $9
+	sw $10, 268501144
+	lw $8, 268501088
+	lw $9, 268501144
+	subu $10, $8, $9
+	sw $10, 268501148
+	lw $8, 268501148
+	sw $8, 268501088
+	j endIf_2
+ifEnd_2:
+endIf_2:
+	lw $8, 268501088
+	li $9, 1
+	div $8, $9
+	mflo $10
+	sw $10, 268501152
+	li $8, 0
+	sll $8, $8, 2
+	li $9, 268501044
+	addu $8, $8, $9
+	lw $10, 0($8)
+	sw $10, 268501156
+	lw $8, 268501152
+	lw $9, 268501156
+	mult $8, $9
+	mflo $10
+	sw $10, 268501160
+	lw $8, 268501160
+	lw $9, 268501088
+	subu $10, $8, $9
+	sw $10, 268501164
+	lw $8, 268501164
+	li $9, 2
+	addu $10, $8, $9
+	sw $10, 268501168
+	lw $8, 268501168
+	li $9, 1
+	bne $8, $9, subCaseEnd_1_1
+	lw $8, 268501088
+	li $9, 5
+	mult $8, $9
+	mflo $10
+	sw $10, 268501172
+	lw $8, 268501172
+	sw $8, 268501088
+	j endCase_1
+subCaseEnd_1_1:
+	lw $8, 268501168
+	li $9, 2
+	bne $8, $9, subCaseEnd_1_2
+	lw $8, 268501088
+	li $9, 0
+	subu $10, $8, $9
+	sw $10, 268501176
+	lw $8, 268501176
+	sw $8, 268501088
+	j endCase_1
+subCaseEnd_1_2:
+	lw $8, 268501088
+	li $9, 9
+	subu $10, $8, $9
+	sw $10, 268501180
+	lw $8, 268501180
+	sw $8, 268501088
+endCase_1:
+mainEnd:

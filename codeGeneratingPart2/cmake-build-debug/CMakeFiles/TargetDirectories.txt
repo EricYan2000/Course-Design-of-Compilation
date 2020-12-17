@@ -1,0 +1,3 @@
+C:/Users/SAMSUNG/Desktop/C/speedRacing/cmake-build-debug/CMakeFiles/speedRacing.dir
+C:/Users/SAMSUNG/Desktop/C/speedRacing/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/SAMSUNG/Desktop/C/speedRacing/cmake-build-debug/CMakeFiles/rebuild_cache.dir

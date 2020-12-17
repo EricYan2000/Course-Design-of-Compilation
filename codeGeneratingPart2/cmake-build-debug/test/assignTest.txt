@@ -1,0 +1,36 @@
+int b = 5;
+int a[3][3] = {{1,2,3},{-3,-2,-1},{111,111,111}};
+int x[10];
+int c = 5;
+
+int fib(int i, int j, int p) {
+    const char c = 'c';
+    if (i < 10)
+        return (fib(i - 1) + 1);
+}
+
+void func() {
+    const int j = 10;
+    char i = 'a';
+    int b[5] = {1,2,3,4,5};
+    int c[2][3];
+    b[3] = x[1+0] * a[1][2] + 3;
+    i = i + 1;
+}
+
+void main() {
+    int t = 5;
+    int b = 5;
+    int p = 6;
+    int m;
+    m = p + b / t;
+    func();
+    fib(t + 1, b, p);
+
+    x[1] = 1;
+    a[2][1] = p + b / t;
+    a[2-1][1-1] = p + b / t;
+    b = 3 + a[1][2] * x[1+0];
+
+    printf("file over\n");
+}
